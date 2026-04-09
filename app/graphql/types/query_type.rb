@@ -5,7 +5,7 @@ module Types
     def self.expose_resource(name:, type:, model:)
       plural_name = name.to_s.pluralize
 
-      field plural_name, [type], null: false
+      field plural_name, [ type ], null: false
       define_method(plural_name) do
         model.all
       end
@@ -26,8 +26,8 @@ module Types
       context.schema.object_from_id(id, context)
     end
 
-    field :nodes, [Types::NodeType, null: true], null: true, description: "Fetches a list of objects given a list of IDs." do
-      argument :ids, [ID], required: true, description: "IDs of the objects."
+    field :nodes, [ Types::NodeType, null: true ], null: true, description: "Fetches a list of objects given a list of IDs." do
+      argument :ids, [ ID ], required: true, description: "IDs of the objects."
     end
 
     expose_resource name: :user, type: Types::UserType, model: User
