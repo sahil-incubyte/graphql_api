@@ -369,6 +369,8 @@ GEM
       net-ssh (>= 2.8.0)
       ostruct
     stringio (3.2.0)
+    strong_migrations (2.6.0)
+      activerecord (>= 7.2)
     thor (1.5.0)
     thruster (0.1.20)
     thruster (0.1.20-aarch64-linux)
@@ -428,6 +430,7 @@ DEPENDENCIES
   solid_cable
   solid_cache
   solid_queue
+  strong_migrations
   thruster
   tzinfo-data
   vcr
@@ -576,6 +579,7 @@ CHECKSUMS
   solid_queue (1.4.0) sha256=e6a18d196f0b27cb6e3c77c5b31258b05fb634f8ed64fb1866ed164047216c2a
   sshkit (1.25.0) sha256=c8c6543cdb60f91f1d277306d585dd11b6a064cb44eab0972827e4311ff96744
   stringio (3.2.0) sha256=c37cb2e58b4ffbd33fe5cd948c05934af997b36e0b6ca6fdf43afa234cf222e1
+  strong_migrations (2.6.0) sha256=3c6bbd63269b4a4dea0e7bb2ab8408aad0e03a0258c5a3b5b2a43f00c5cb710f
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
   thruster (0.1.20) sha256=c05f2fbcae527bbe093a6e6d84fb12d9d680617e7c162325d9b97e8e9d4b5201
   thruster (0.1.20-aarch64-linux) sha256=754f1701061235235165dde31e7a3bc87ec88066a02981ff4241fcda0d76d397

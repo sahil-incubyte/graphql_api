@@ -44,6 +44,8 @@ gem "simplecov", require: false
 
 gem "vcr"
 gem "webmock"
+
+gem "strong_migrations"
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
