@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://geocoding-api.open-meteo.com/v1/search?count=1&name=Pune
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Apr 2026 06:07:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '380'
+      Connection:
+      - keep-alive
+      X-Encoding-Time:
+      - 0.004184246063232422 ms
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":1259229,"name":"Pune","latitude":18.51957,"longitude":73.85535,"elevation":554.0,"feature_code":"PPL","country_code":"IN","admin1_id":1264418,"admin2_id":8133375,"admin3_id":12685530,"timezone":"Asia/Kolkata","population":3124458,"country_id":1269750,"country":"India","admin1":"Maharashtra","admin2":"Pune","admin3":"Pune
+        City"}],"generationtime_ms":0.33807755}'
+  recorded_at: Fri, 10 Apr 2026 06:07:14 GMT
+- request:
+    method: get
+    uri: https://api.open-meteo.com/v1/forecast?current_weather=true&latitude=18.51957&longitude=73.85535
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Apr 2026 06:07:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsYXRpdHVkZSI6MTguNSwibG9uZ2l0dWRlIjo3My44NzUsImdlbmVyYXRpb250aW1lX21zIjowLjA1OTk2MjI3MjY0NDA0Mjk3LCJ1dGNfb2Zmc2V0X3NlY29uZHMiOjAsInRpbWV6b25lIjoiR01UIiwidGltZXpvbmVfYWJicmV2aWF0aW9uIjoiR01UIiwiZWxldmF0aW9uIjo1NTUuMCwiY3VycmVudF93ZWF0aGVyX3VuaXRzIjp7InRpbWUiOiJpc284NjAxIiwiaW50ZXJ2YWwiOiJzZWNvbmRzIiwidGVtcGVyYXR1cmUiOiLCsEMiLCJ3aW5kc3BlZWQiOiJrbS9oIiwid2luZGRpcmVjdGlvbiI6IsKwIiwiaXNfZGF5IjoiIiwid2VhdGhlcmNvZGUiOiJ3bW8gY29kZSJ9LCJjdXJyZW50X3dlYXRoZXIiOnsidGltZSI6IjIwMjYtMDQtMTBUMDY6MDAiLCJpbnRlcnZhbCI6OTAwLCJ0ZW1wZXJhdHVyZSI6MzMuOCwid2luZHNwZWVkIjo3LjYsIndpbmRkaXJlY3Rpb24iOjU5LCJpc19kYXkiOjEsIndlYXRoZXJjb2RlIjowfX0=
+  recorded_at: Fri, 10 Apr 2026 06:07:15 GMT
+recorded_with: VCR 6.4.0

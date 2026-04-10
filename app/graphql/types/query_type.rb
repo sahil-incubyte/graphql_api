@@ -30,7 +30,7 @@ module Types
       argument :ids, [ ID ], required: true, description: "IDs of the objects."
     end
 
-    expose_resource name: :user, type: Types::UserType, model: User
+    field :users, resolver: Resolvers::UsersResolver
     expose_resource name: :post, type: Types::PostType, model: Post
 
     def nodes(ids:)
