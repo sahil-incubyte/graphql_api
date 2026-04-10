@@ -1,7 +1,7 @@
 # app/graphql/resolvers/users_resolver.rb
 module Resolvers
   class UsersResolver < Resolvers::BaseResolver
-    type [Types::UserType], null: false
+    type [ Types::UserType ], null: false
 
     def resolve
       User.all

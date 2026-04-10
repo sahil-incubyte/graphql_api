@@ -36,14 +36,14 @@ gem "graphql"
 
 gem "httparty"
 
-gem 'factory_bot_rails'
+gem "factory_bot_rails"
 
-gem 'faker'
+gem "faker"
 
-gem 'simplecov', require: false
+gem "simplecov", require: false
 
-gem 'vcr'
-gem 'webmock'
+gem "vcr"
+gem "webmock"
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
@@ -60,7 +60,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem 'rspec-rails'
+  gem "rspec-rails"
 end
 
 group :development do
