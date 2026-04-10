@@ -27,9 +27,9 @@
           null,
           null,
           null,
-          30,
-          30,
-          30,
+          32,
+          32,
+          32,
           null,
           null,
           1,
@@ -178,6 +178,52 @@
           1,
           1,
           2,
+          null,
+          null
+        ]
+      },
+      "/home/sahil/graphql_api/spec/support/vcr.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/sahil/graphql_api/spec/services/weather_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/sahil/graphql_api/app/services/weather_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
           null,
           null
         ]
@@ -491,6 +537,6 @@
         ]
       }
     },
-    "timestamp": 1775791524
+    "timestamp": 1775801250
   }
 }

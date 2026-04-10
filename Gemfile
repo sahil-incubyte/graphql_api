@@ -34,11 +34,16 @@ gem "image_processing", "~> 1.2"
 
 gem "graphql"
 
+gem "httparty"
+
 gem 'factory_bot_rails'
 
 gem 'faker'
 
 gem 'simplecov', require: false
+
+gem 'vcr'
+gem 'webmock'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
